@@ -18,7 +18,10 @@ const Home = () => {
                     cursorChar={"_"}
                 />
             </p>
-            <span className="text-gray-400">This application is designed to simplify the daily reporting of tasks completed</span>
+            <span className="text-gray-400">
+                This application is designed to simplify the daily reporting of tasks completed,
+                👉<a href="/daily" className="underline hover:text-gray-700">lets write</a>.
+            </span>
             <div className="fixed bottom-0 py-4">
                 <span className="text-gray-400 underline">&copy; Created by <span className="italic">Putra Satria</span></span>
             </div>
