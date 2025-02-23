@@ -17,18 +17,17 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
    const [state, setState] = useState(initialState);
 
    const setAuthenticate = (isAuthenticated: boolean) => {
-      setState({
-         ...state,
+      setState((prevState) => ({
+         ...prevState,
          isAuthenticated,
-      });
+      }));
    };
 
    const setAuthData = (authData: Record<string, any>) => {
-      console.log("auth data", authData);
-      setState({
-         ...state,
-         authData: authData,
-      });
+      setState((prevState) => ({
+         ...prevState,
+         authData,
+      }));
    };
 
    const checkAuth = (): void => {

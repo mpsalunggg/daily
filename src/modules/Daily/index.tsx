@@ -3,8 +3,6 @@ import { useAuthContext } from "@/contexts/Auth/context";
 
 const Daily = () => {
    const { auth } = useAuthContext();
-
-   console.log(auth);
    return (
       <div className="py-4">
          <div>
