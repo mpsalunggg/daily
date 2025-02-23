@@ -4,7 +4,7 @@ import { useAuthContext } from "@/contexts/Auth/context";
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
    const { isAuthenticated } = useAuthContext();
 
-   if (!isAuthenticated) {
+   if (isAuthenticated === null) {
       return (
          <div className="flex justify-center items-center h-screen">
             Loading...

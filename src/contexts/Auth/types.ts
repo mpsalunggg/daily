@@ -1,9 +1,9 @@
 export interface AuthContextType {
    auth: Record<string, any>;
-   isAuthenticated: boolean;
+   isAuthenticated: null | boolean;
 }
 
 export interface AuthStateType {
    authData: Record<string, any>;
-   isAuthenticated: boolean;
+   isAuthenticated: null | boolean;
 }

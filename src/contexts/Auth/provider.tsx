@@ -10,7 +10,7 @@ export const AuthContext = createContext<AuthContextType | undefined>(
 
 const initialState: AuthStateType = {
    authData: {},
-   isAuthenticated: false,
+   isAuthenticated: null,
 };
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
