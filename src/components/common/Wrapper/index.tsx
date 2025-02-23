@@ -4,13 +4,13 @@ import { Outlet } from "react-router-dom";
 
 const Wrapper = () => {
    return (
-      <ProtectedRoute>
-         <AuthProvider>
+      <AuthProvider>
+         <ProtectedRoute>
             <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-96">
                <Outlet />
             </div>
-         </AuthProvider>
-      </ProtectedRoute>
+         </ProtectedRoute>
+      </AuthProvider>
    );
 };
 export default Wrapper;
