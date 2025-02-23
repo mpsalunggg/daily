@@ -46,12 +46,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
             localStorage.removeItem(GOOGLE_TOKEN);
             setAuthenticate(false);
          } else {
-            console.log("auth", JSON.parse(data));
             setAuthData(JSON.parse(data));
             setAuthenticate(true);
          }
       } catch (error) {
-         console.error("Invalid token:", error);
          localStorage.removeItem(GOOGLE_TOKEN);
          setAuthenticate(false);
       }
